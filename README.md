@@ -20,12 +20,12 @@ Ensure you have the following installed:
 ```sh
 git clone https://github.com/BUNara/JavaTTLCache.git
 cd JavaTTLCache
-3️⃣ Build the Project
+### **3️⃣ Build the Project
 sh
 Copy
 Edit
 mvn clean install
-4️⃣ Run the Spring Boot Application
+### **4️⃣ Run the Spring Boot Application
 sh
 Copy
 Edit
@@ -36,13 +36,14 @@ arduino
 Copy
 Edit
 http://localhost:8080
-📌 Task Overview
-Your task is to implement a thread-safe in-memory cache that supports: 1️⃣ Storing key-value pairs
+## **📌 Task Overview
+Your task is to implement a thread-safe in-memory cache that supports:
+1️⃣ Storing key-value pairs
 2️⃣ Retrieving values from the cache
 3️⃣ Automatically expiring cache entries after a specified TTL (Time-To-Live)
 4️⃣ Exposing REST API endpoints to interact with the cache
 
-📌 Requirements
+## **📌 Requirements
 The cache should be thread-safe and handle concurrent access.
 Entries should expire automatically after 60 seconds.
 The cache should be accessible via a REST API with the following endpoints:
@@ -67,12 +68,8 @@ JavaTTLCache/
 Fork this repository.
 Implement your solution in CacheService.java and CacheController.java.
 Push your changes and share the GitHub repo link.
-📌 Notes
+## **📌 Notes
 You can use any approach to ensure thread safety and TTL expiration.
 Follow REST API best practices.
 The correctness, performance, and maintainability of your solution will be evaluated.
-🚀 Good luck! Looking forward to your implementation!
-
-yaml
-Copy
-Edit
+## **🚀 Good luck! Looking forward to your implementation!
