@@ -17,25 +17,16 @@ Ensure you have the following installed:
 - An API testing tool like **Postman** or **cURL**
 
 ### **2️⃣ Clone the Repository**
-```sh
 git clone https://github.com/BUNara/JavaTTLCache.git
 cd JavaTTLCache
-### **3️⃣ Build the Project**
-sh
-Copy
-Edit
-mvn clean install
-### **4️⃣ Run the Spring Boot Application**
-sh
-Copy
-Edit
-mvn spring-boot:run
-By default, the API will be available at:
 
-arduino
-Copy
-Edit
+### **3️⃣ Build the Project**
+mvn clean install
+
+### **4️⃣ Run the Spring Boot Application**
+mvn spring-boot:run
 http://localhost:8080
+
 ## **📌 Task Overview**
 Your task is to implement a thread-safe in-memory cache that supports:
 1️⃣ Storing key-value pairs
