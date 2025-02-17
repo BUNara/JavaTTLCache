@@ -18,6 +18,7 @@ Ensure you have the following installed:
 
 ### **2️⃣ Clone the Repository**
 git clone https://github.com/BUNara/JavaTTLCache.git
+
 cd JavaTTLCache
 
 ### **3️⃣ Build the Project**
@@ -25,28 +26,39 @@ mvn clean install
 
 ### **4️⃣ Run the Spring Boot Application**
 mvn spring-boot:run
+
 http://localhost:8080
 
 ## **📌 Task Overview**
 Your task is to implement a thread-safe in-memory cache that supports:
+
 1️⃣ Storing key-value pairs
+
 2️⃣ Retrieving values from the cache
+
 3️⃣ Automatically expiring cache entries after a specified TTL (Time-To-Live)
+
 4️⃣ Exposing REST API endpoints to interact with the cache
 
 ## **📌 Requirements**
 The cache should be thread-safe and handle concurrent access.
+
 Entries should expire automatically after 60 seconds.
+
 The cache should be accessible via a REST API with the following endpoints:
+
 API Endpoints
+
 Method	Endpoint	Description
-PUT	/cache/{key}	Stores a value in the cache
-GET	/cache/{key}	Retrieves a value (returns 404 if expired)
-DELETE	/cache/{key}	Removes a value from the cache
+
+- PUT	/cache/{key}	Stores a value in the cache
+- GET	/cache/{key}	Retrieves a value (returns 404 if expired)
+- DELETE	/cache/{key}	Removes a value from the cache
+
 📂 Project Structure
-bash
-Copy
-Edit
+
+```
+.
 JavaTTLCache/
 │── src/main/java/com/example/ttlcache/
 │   ├── CacheService.java      # Implement your caching logic here
@@ -55,12 +67,22 @@ JavaTTLCache/
 │   ├── application.properties # Configuration settings (optional)
 │── pom.xml                    # Maven dependencies
 │── README.md                   # Instructions for candidates
+```
+
 📩 Submitting Your Solution
+
 Fork this repository.
+
 Implement your solution in CacheService.java and CacheController.java.
+
 Push your changes and share the GitHub repo link.
+
 ## **📌 Notes**
+
 You can use any approach to ensure thread safety and TTL expiration.
+
 Follow REST API best practices.
+
 The correctness, performance, and maintainability of your solution will be evaluated.
+
 ## **🚀 Good luck! Looking forward to your implementation!**
